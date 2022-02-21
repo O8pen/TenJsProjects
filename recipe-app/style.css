@@ -37,20 +37,21 @@ header input {
     background-color: azure;
     border: none;
     border-radius: 3px;
+    font-family: inherit;
     padding: 0.5rem 1rem;
 }
 
 header button {
     background-color: transparent;
     border: none;
-    color: #eee;
-    font-size: 2rem;
+    color: rgb(138, 129, 141);
+    font-size: 1.5rem;
     margin-left: 10px;
 }
 
 .fav-container {
     background-color: rgb(233, 199, 255);
-    padding: 1rem;
+    padding: 0.25rem 1rem;
     text-align: center;
 }
 
@@ -92,7 +93,7 @@ header button {
 
 .meal-header .random{
     position: absolute;
-    top: 10px;
+    top: 1rem;
     background-color: #fff;
     padding: 0.25rem 1rem;
     border-top-right-radius: 3px;
