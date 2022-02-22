@@ -36,13 +36,16 @@ body {
 }
 
 .notes .main {
-    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    height: 400px;
     width: 100%;
 }
 
 .notes textarea {
     outline: none;
     font-family: inherit;
+    font-size: 1.2rem;
     border: none;
     height: 100%;
     width: 100%;

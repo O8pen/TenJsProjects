@@ -13,9 +13,5 @@ editBtn.addEventListener(`click`, ()=>{
 textArea.addEventListener("input", (e)=>{
     const { value } = e.target;
 
-    // console.log(marked(value))
-
     main.innerHTML = marked(value);
-    
-    // console.log(main.innerHTML)
 })
