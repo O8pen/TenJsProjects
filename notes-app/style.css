@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 * {
     box-sizing: border-box;
@@ -12,21 +12,31 @@ body {
     margin: 0;
 }
 
-.notes {
+.add {
+    background-color: #9ec862;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+.note {
     background-color: #fff;
     margin: 20px;
     width: 400px;
     height: 400px;
 }
 
-.notes .tools {
+.note .tools {
     background-color: #9ec862;
     display: flex;
     justify-content: flex-end;
     padding: 0.5rem;
 }
 
-.notes .tools button {
+.note .tools button {
     background-color: transparent;
     border: none;
     color: #fff;
@@ -35,14 +45,14 @@ body {
     margin-left: 0.5rem;
 }
 
-.notes .main {
+.note .main {
     background-color: #fff;
     overflow: hidden;
     height: 400px;
     width: 100%;
 }
 
-.notes textarea {
+.note textarea {
     outline: none;
     font-family: inherit;
     font-size: 1.2rem;
@@ -51,6 +61,6 @@ body {
     width: 100%;
 }
 
-.notes .hidden {
+.note .hidden {
     display: none;
 }
