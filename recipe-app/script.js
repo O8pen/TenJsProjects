@@ -97,7 +97,6 @@ function addMealLS(mealId) {
 
 function removeMealLS(mealId) {
   const mealIds = getMealsLS();
-  
 
   localStorage.setItem(
     `mealIds`,
