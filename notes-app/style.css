@@ -17,6 +17,7 @@ body {
     border-radius: 3px;
     border: none;
     color: white;
+    cursor: pointer;
     position: fixed;
     top: 1rem;
     right: 1rem;
