@@ -23,3 +23,16 @@ async function getMovies() {
 }
 
 getMovies();
+
+{
+    /* <div class="movie">
+<img
+    src="https://image.tmdb.org/t/p/w1280/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
+    alt=""
+/>
+<div class="movie-info">
+    <h3>Movie Title</h3>
+    <span>8.4</span>
+</div>
+</div> */
+}
