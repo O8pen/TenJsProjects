@@ -11,13 +11,26 @@ async function getMovies() {
 
     console.log(respData);
 
-    // respData.results.forEach((movie) => {
-    //     const img = document.createElement(`img`);
+    respData.results.forEach((movie) => {
+        const { poster_path, title, vote_average } = movie;
+        const movieEl = document.createElement(`div`);
+        movieEl.classList.add(`movie`);
 
-    //     img.src = IMGPATH + movie.poster_path;
+        movieEl.innerHTML = `
+        <div class="movie">
+            <img
+                src="${IMGPATH + poster_path}"
+                alt="${title}"
+            />
+            <div class="movie-info">
+                <h3>${title}</h3>
+                <span>${vote_average}</span>
+            </div>
+        </div>
+        `;
 
-    //     document.body.appendChild(img);
-    // });
+        document.body.appendChild(movieEl);
+    });
 
     return respData;
 }
@@ -25,14 +38,5 @@ async function getMovies() {
 getMovies();
 
 {
-    /* <div class="movie">
-<img
-    src="https://image.tmdb.org/t/p/w1280/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
-    alt=""
-/>
-<div class="movie-info">
-    <h3>Movie Title</h3>
-    <span>8.4</span>
-</div>
-</div> */
+    /*  */
 }
