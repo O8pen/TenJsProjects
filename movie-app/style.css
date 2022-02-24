@@ -10,11 +10,16 @@ body {
     margin: 0;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .movie {
     background-color: #373b69;
     border-radius: 3px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-    margin: 2rem;
+    margin: 1rem;
     width: 300px;
 }
 
@@ -25,9 +30,10 @@ body {
 .movie-info {
     color: #eee;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem 1rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 .movie-info h3 {

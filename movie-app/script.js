@@ -5,6 +5,8 @@ const IMGPATH = "https://image.tmdb.org/t/p/w1280";
 const SEARCHAPI =
     "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=";
 
+const main = document.querySelector(`main`);
+
 async function getMovies() {
     const resp = await fetch(APIURL);
     const respData = await resp.json();
@@ -29,7 +31,7 @@ async function getMovies() {
         </div>
         `;
 
-        document.body.appendChild(movieEl);
+        main.appendChild(movieEl);
     });
 
     return respData;
