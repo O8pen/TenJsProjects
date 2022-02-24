@@ -18,6 +18,7 @@ h1 {
 }
 
 form {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: auto;
     max-width: 100%;
     width: 400px;
@@ -25,7 +26,6 @@ form {
 
 .input {
     border: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-size: 2rem;
     padding: 1rem 2rem;
     display: block;
@@ -44,6 +44,7 @@ form {
 }
 
 .todos li {
+    border-top: 1px solid #e5e5e5;
     font-size: 1.5rem;
     padding: 1rem 2rem;
 }
