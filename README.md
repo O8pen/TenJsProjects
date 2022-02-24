@@ -4,6 +4,6 @@
 
 https://www.youtube.com/watch?v=dtKciwk_si4
 
-Time in the Video : 5.05.47
+Time in the Video : 5.27.16
 
 Movie app DB : https://github.com/mihaiandrei97/movie-list-app-react-hooks
