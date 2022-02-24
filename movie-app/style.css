@@ -43,5 +43,18 @@ main {
 .movie-info span {
     background-color: #22254b;
     border-radius: 3px;
+    font-weight: bold;
     padding: 0.25rem 0.5rem;
+}
+
+.movie-info span.green {
+    color: rgb(22, 196, 22);
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: red;
 }
