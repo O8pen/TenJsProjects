@@ -19,7 +19,6 @@ async function getMovies() {
         movieEl.classList.add(`movie`);
 
         movieEl.innerHTML = `
-        <div class="movie">
             <img
                 src="${IMGPATH + poster_path}"
                 alt="${title}"
@@ -30,7 +29,6 @@ async function getMovies() {
                     vote_average
                 )}">${vote_average}</span>
             </div>
-        </div>
         `;
 
         main.appendChild(movieEl);
