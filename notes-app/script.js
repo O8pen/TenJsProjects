@@ -34,6 +34,7 @@ function addNewNote(text = ``) {
     const textArea = note.querySelector("textarea");
 
     textArea.value = text;
+    main.innerHTML = marked(text);
 
     editBtn.addEventListener(`click`, () => {
         main.classList.toggle(`hidden`);
