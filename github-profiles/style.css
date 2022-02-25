@@ -18,3 +18,8 @@ body {
 
 input {
 }
+
+.card {
+    background-color: #7c165f;
+    background-image: linear-gradient(315deg, #d18dbe 0%, #683dcc 74%);
+}
