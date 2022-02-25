@@ -22,7 +22,6 @@ async function getMovies(url) {
 }
 
 function showMovies(movies) {
-    // clear main
     main.innerHTML = ``;
 
     movies.forEach((movie) => {
