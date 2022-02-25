@@ -48,12 +48,6 @@ input:focus {
     max-width: 800px;
 }
 
-.img-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .avatar {
     border: 10px solid #2a2a72;
     border-radius: 50%;
@@ -90,6 +84,7 @@ input:focus {
 
 .repo {
     background-color: #350727;
+    border-radius: 5px;
     display: inline-block;
     color: white;
     font-size: 0.7rem;
