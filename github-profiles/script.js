@@ -41,8 +41,6 @@ function createUserCard(user) {
                     <li>${user.public_repos}<strong>Repos</strong></li>
                 </ul>
 
-                <h4>Repos</h4>
-
                 <div id="repos">
                 </div>
             </div>
@@ -58,16 +56,19 @@ function addReposToCard(repos) {
     const reposEl = document.getElementById(`repos`);
     console.log(repos);
 
-    repos.slice(0, 9).forEach((repo) => {
-        const repoEl = document.createElement(`a`);
-        repoEl.classList.add(`repo`);
+    repos
+        .sort((a, b) => a.stargazer_count - b)
+        .slice(0, 10)
+        .forEach((repo) => {
+            const repoEl = document.createElement(`a`);
+            repoEl.classList.add(`repo`);
 
-        repoEl.href = repo.html_url;
-        repoEl.target = `_blank`;
-        repoEl.innerText = repo.name;
+            repoEl.href = repo.html_url;
+            repoEl.target = `_blank`;
+            repoEl.innerText = repo.name;
 
-        reposEl.appendChild(repoEl);
-    });
+            reposEl.appendChild(repoEl);
+        });
 }
 
 form.addEventListener(`submit`, (e) => {
