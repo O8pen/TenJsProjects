@@ -22,14 +22,14 @@ function createUserCard(user) {
             <div class="img-container">
                 <img class="avatar" src="${user.avatar_url}" alt="${user.name}"/>
             </div>
-            <div class="user.info">
+            <div class="user-info">
                 <h2>${user.name}</h2>
                 <p>${user.bio}</p>
             
                 <ul class="info">
-                    <li>${user.followers}</li>
-                    <li>${user.following}</li>
-                    <li>${user.public_repos}</li>
+                    <li>${user.followers}<strong>Followers</strong></li>
+                    <li>${user.following}<strong>Following</strong></li>
+                    <li>${user.public_repos}<strong>Repos</strong></li>
                 </ul>
             </div>
         </div>

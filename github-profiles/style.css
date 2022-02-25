@@ -17,6 +17,24 @@ body {
 }
 
 input {
+    background-color: #7c165f;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+        0 15px 40px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+input:focus {
+    outline: none;
 }
 
 .card {
@@ -40,7 +58,7 @@ input {
     border: 10px solid #2a2a72;
     border-radius: 50%;
     height: 150px;
-    width: 100px;
+    width: 150px;
 }
 
 .user-info {
@@ -57,5 +75,15 @@ input {
     justify-content: space-between;
     list-style-type: none;
     padding: 0;
-    width: 300px;
+    max-width: 400px;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
 }
