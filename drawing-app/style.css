@@ -16,13 +16,14 @@ body {
 }
 
 canvas {
-    border: 1px solid #111;
+    border: 2px solid rebeccapurple;
 }
 
 .toolbox {
     background-color: rebeccapurple;
+    border: 1px solid rebeccapurple;
     padding: 1rem;
-    width: 800px;
+    width: 804px;
 }
 
 .toolbox > * {
