@@ -4,4 +4,4 @@
 
 https://www.youtube.com/watch?v=dtKciwk_si4
 
-Time in the Video : 6.33.31
+Time in the Video : 7.19.41

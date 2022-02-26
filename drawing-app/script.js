@@ -3,6 +3,7 @@ const increaseBtn = document.getElementById(`increase`);
 const decreaseBtn = document.getElementById(`decrease`);
 const sizeEl = document.getElementById(`size`);
 const colorEl = document.getElementById(`color`);
+const clearEl = document.getElementById(`clear`);
 
 const ctx = canvas.getContext("2d");
 
@@ -50,7 +51,7 @@ function drawLine(x1, y1, x2, y2) {
     ctx.moveTo(x1, y1);
     ctx.lineTo(x2, y2);
     ctx.strokeStyle = color;
-    ctx.lineWidth = size;
+    ctx.lineWidth = size * 2;
     ctx.stroke();
 }
 
@@ -73,6 +74,10 @@ decreaseBtn.addEventListener(`click`, () => {
 
 colorEl.addEventListener(`change`, (e) => {
     color = e.target.value;
+});
+
+clearEl.addEventListener(`click`, (e) => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
 
 function updateSizeOnScreen() {
