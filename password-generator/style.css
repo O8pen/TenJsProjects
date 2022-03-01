@@ -17,26 +17,32 @@ body {
 
 .pw-container {
     background-color: rgb(49, 12, 87);
-    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
 }
 
 .pw-header {
-    background-color: rebeccapurple;
+    background-color: rgb(49, 12, 87);
     padding: 1rem;
 }
 
 .pw {
-    background-color: rebeccapurple;
+    background-color: rgb(90, 30, 150);
+    font-size: 2rem;
     display: flex;
     align-items: center;
     height: 70px;
     width: 100%;
     position: relative;
+    padding: 1rem;
 }
 
 .pw button {
+    background-color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateY();
+    transform: translate(-50%, 50%);
 }
