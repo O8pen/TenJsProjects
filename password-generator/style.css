@@ -7,11 +7,36 @@
 body {
     background-color: rebeccapurple;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: "Poppins", sans-serif;
     margin: 0;
+    min-height: 100vh;
 }
 
 .pw-container {
-    background-color: rgb(75, 29, 121);
-    width: 400px;
+    background-color: rgb(49, 12, 87);
+    width: 300px;
+}
+
+.pw-header {
+    background-color: rebeccapurple;
+    padding: 1rem;
+}
+
+.pw {
+    background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+}
+
+.pw button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateY();
 }
