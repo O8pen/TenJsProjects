@@ -18,7 +18,7 @@ body {
 .pw-container {
     background-color: rgb(49, 12, 87);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    max-width: 400px;
+    min-width: 400px;
 }
 
 .pw-header {
@@ -80,4 +80,12 @@ body {
     font-size: 1.5rem;
     margin-top: 1rem;
     width: 100%;
+    cursor: pointer;
+}
+
+input#lower,
+input#upper,
+input#number,
+input#symbol {
+    cursor: pointer;
 }
