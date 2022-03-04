@@ -25,3 +25,12 @@ input {
     padding: 1rem;
     min-width: 300px;
 }
+
+.weather {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.weather h2 {
+    margin-bottom: 0;
+}

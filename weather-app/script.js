@@ -12,22 +12,17 @@ async function getWeatherByLocation(city) {
     const resp = await fetch(url(city), { origin: "cors" });
     const respData = await resp.json();
 
-    console.log(KtoC(respData.main.temp));
-
     addWeatherToPage(respData);
 }
 
 function addWeatherToPage(data) {
     const temp = KtoC(data.main.temp);
 
-    console.log(temp);
-
     const weather = document.createElement(`div`);
     weather.classList.add(`weather`);
 
     weather.innerHTML = `
         <h2>${temp}°C</h2>
-        <small>in ${search.value}</small>
     `;
 
     main.innerHTML = ``;
