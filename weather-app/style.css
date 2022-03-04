@@ -21,6 +21,7 @@ input {
     border-radius: 25px;
     padding: 1rem;
     font-family: inherit;
+    font-size: 1rem;
     box-shadow: 0.4px rbga(0, 0, 0, 0.2);
     padding: 1rem;
     min-width: 300px;
@@ -32,5 +33,7 @@ input {
 }
 
 .weather h2 {
+    display: flex;
+    align-items: center;
     margin-bottom: 0;
 }
